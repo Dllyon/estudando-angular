@@ -8,27 +8,33 @@
 </ul>
 <hr>
 
-<h2>Diretivas Estruturais</h2>
+<h2>Diretivas Estruturais </h2>
 <p>
-    Eles moldam ou remodelam a estrutura do elemento, adicionando, removendo ou manipulando esses elementos. São eles: NgIf, NgFor e NgSwitch.
+    Eles moldam ou remodelam a estrutura do elemento, adicionando, removendo ou manipulando esses elementos. São eles:
+    NgIf, NgFor e NgSwitch.
 </p>
 <hr>
 
 <h2>Diretivas de Atributos</h2>
 <p>
-    Alteram a aparência ou comportamento de um elemento ou componente ou outra diretiva. São eles: NgStyle, NgClass e NgModel.
+    Alteram a aparência ou comportamento de um elemento ou componente ou outra diretiva. São eles: NgStyle, NgClass e
+    NgModel.
 </p>
 <hr>
 
 <h2>Diretivas Customizadas</h2>
 <p>
-    As diretivas customizadas nos permitem manipular a estilização de elementos do HTML, ouvir eventos da DOM, adicionar ou remover classes e inserir novos atributos. Para gerar uma nova diretiva, utiliza-se o comando <strong>ng g d nome-diretiva</strong>.
+    As diretivas customizadas nos permitem manipular a estilização de elementos do HTML, ouvir eventos da DOM, adicionar
+    ou remover classes e inserir novos atributos. Para gerar uma nova diretiva, utiliza-se o comando <strong>ng g d
+        nome-diretiva</strong>.
 </p>
 <hr>
 
 <h2>NgIf</h2>
-<p *ngIf="visivel"> <!--true -> mostrar o elemento / false -> não mostrar o elemento-->
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint eligendi sunt dicta eveniet. Quidem ipsa autem officiis, eum deleniti magni dolor nam, facere, sequi aspernatur doloremque facilis ratione saepe. Aut?
+<p *ngIf="visivel">
+    <!--true -> mostrar o elemento / false -> não mostrar o elemento-->
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint eligendi sunt dicta eveniet. Quidem ipsa autem
+    officiis, eum deleniti magni dolor nam, facere, sequi aspernatur doloremque facilis ratione saepe. Aut?
 </p>
 <button (click)="alterarVisualizacao()">Ocultar / Mostrar</button>
 
@@ -105,11 +111,15 @@
 
 <h2>ng-template</h2>
 <p *ngIf="false; else texto2">
-    1 - Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, consequuntur, necessitatibus consectetur laboriosam fuga laborum magni impedit tempora dignissimos officia vero! Minima fuga placeat quas ea quis a, ipsa esse.
+    1 - Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, consequuntur, necessitatibus consectetur
+    laboriosam fuga laborum magni impedit tempora dignissimos officia vero! Minima fuga placeat quas ea quis a, ipsa
+    esse.
 </p>
 <ng-template #texto2>
     <p>
-        2 - Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non sit excepturi ducimus maiores. Quibusdam maiores quasi minima provident accusamus quaerat incidunt obcaecati quos animi adipisci, accusantium voluptates cumque officia rerum?
+        2 - Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non sit excepturi ducimus maiores. Quibusdam
+        maiores quasi minima provident accusamus quaerat incidunt obcaecati quos animi adipisci, accusantium voluptates
+        cumque officia rerum?
     </p>
 </ng-template>
 <hr>
@@ -128,10 +138,12 @@
     <p>Paragrafo de teste!</p>
     <div class="p2">
         <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, pariatur. Magni hic ex obcaecati, libero ut culpa, temporibus fugit provident alias aperiam ipsam! Alias commodi dicta impedit corrupti quo magnam.]
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, pariatur. Magni hic ex obcaecati, libero ut
+            culpa, temporibus fugit provident alias aperiam ipsam! Alias commodi dicta impedit corrupti quo magnam.]
         </p>
         <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere earum rem harum quisquam cumque quae sequi. Quas vero assumenda quos impedit id aliquid cumque dolorem. Molestias porro sunt sequi voluptates.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere earum rem harum quisquam cumque quae sequi.
+            Quas vero assumenda quos impedit id aliquid cumque dolorem. Molestias porro sunt sequi voluptates.
         </p>
     </div>
 </app-teste>
@@ -140,7 +152,8 @@
 <h2>Diretivas Customizadas (Pink)</h2>
 <h3 pink>Titulo</h3>
 <p pink>
-    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati sint soluta magni delectus ratione numquam! Sunt, reiciendis corporis facilis nesciunt, libero totam amet expedita, non est quasi a quaerat quis!
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati sint soluta magni delectus ratione numquam!
+    Sunt, reiciendis corporis facilis nesciunt, libero totam amet expedita, non est quasi a quaerat quis!
 </p>
 <h4 pink>Titlo 2</h4>
 <hr>
@@ -148,7 +161,8 @@
 <h2 [highlight]="color">Diretivas Customizadas (Mouse Highlight)</h2>
 <h3 [highlight]="color">Titulo teste</h3>
 <p [highlight]="color">
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt repellat soluta culpa harum rerum nostrum officiis sapiente voluptas quam, possimus suscipit asperiores quod quo nulla ab, dignissimos quia maxime? Illum.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt repellat soluta culpa harum rerum nostrum officiis
+    sapiente voluptas quam, possimus suscipit asperiores quod quo nulla ab, dignissimos quia maxime? Illum.
 </p>
 <input type="text" #campoColor>
 <button (click)="aplicarCor(campoColor.value)">Aplicar Cor</button>
